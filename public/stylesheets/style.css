@@ -32,6 +32,15 @@ h1 {
   color: black;
 }
 
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:visited {
+  color: #007bff;
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -39,7 +48,7 @@ a:hover {
 #new-skill {
   font-size: 25px;
 }
-#main {
+.main {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -47,61 +56,23 @@ a:hover {
   border: 2px solid black;
 }
 
-#main a {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-#main h3 {
-  margin: 10px;
-}
-
-#new-skill-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid black;
-}
-
-#new-skill-main form{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#new-skill-main form button {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-#new-skill-main > * {
+.main > * {
   margin-left: 10px;
   margin-right: 10px;
 }
 
-#edit-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: 3px solid black;
-}
-
-#edit-main > * {
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-#edit-main form {
+.main form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-#edit-main form button {
+.main form button {
   margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.main a {
   margin-bottom: 10px;
 }
