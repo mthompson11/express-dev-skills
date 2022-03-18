@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="main">
+    <div class="main">
         <h3><%=  `I learned ${skill.skill} ${skill.years} years ago at ${skill.bootCamp ? 'General Assembly' : 'work'}.` %></h3>
         <form action="/skills/<%= skill.id %>?_method=DELETE" method="POST">
             <button type="submit">
