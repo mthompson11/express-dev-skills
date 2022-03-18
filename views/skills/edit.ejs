@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="edit-main">
+        <h1>Edit Skill</h1>
+        <form action="/skills/<%= skill.id %>?_method=PUT" method="POST" autocomplete="off">
+            <p>Skill:</p>
+            <input type="text" name="skill" value="<%= skill.skill %>">
+            <p>Years:</p>
+            <input type="text" name="years" value="<%= skill.years %>">
+            <p>Bootcamp?:</p>
+            <select name="bootCamp">
+                <option value="true" <% if(skill.bootCamp){ %> selected <% } %>>True</option>
+                <option value="false" <% if(!skill.bootCamp){ %> selected <% } %>>False</option>
+            </select>
+            <button type="submit">Update Skill</button>
+        </form>
+    </div>  
+</body>
+</html>
