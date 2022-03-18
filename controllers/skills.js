@@ -33,9 +33,9 @@ function edit(req,res){
 };
 
 function update(req,res){
-    console.log(req.body);
-    res.redirect('/skills/show');
-}
+    Skill.updateOne(req.params.id, req.body);
+    res.redirect(`${req.params.id}`);
+};
 
 module.exports = {
     index,
