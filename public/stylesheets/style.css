@@ -1,6 +1,7 @@
 body {
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -25,4 +26,82 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+h1 {
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+#new-skill {
+  font-size: 25px;
+}
+#main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+}
+
+#main a {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#main h3 {
+  margin: 10px;
+}
+
+#new-skill-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+}
+
+#new-skill-main form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#new-skill-main form button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#new-skill-main > * {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#edit-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid black;
+}
+
+#edit-main > * {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#edit-main form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#edit-main form button {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }

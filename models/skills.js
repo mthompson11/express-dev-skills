@@ -21,7 +21,28 @@ function getOne(id){
     })
 };
 
+function create(skill){
+    const newId = skills[skills.length - 1].id + 1;
+    newSkill = {id: newId, skill: skill.skill, years: parseInt(skill.years), bootCamp: skill.bootCamp === "true" ? true : false};
+    skills.push(newSkill);
+};
+
+function deleteOne(id){
+    id = parseInt(id);
+    const idx = skills.findIndex((skill) => skill.id === id);
+    skills.splice(idx, 1);
+};
+
+function updateOne(id, data){
+    id = parseInt(id);
+    const idx = skills.findIndex((skill) => skill.id === id);
+    skills[idx] = {id : id, skill : data.skill, years : Number(data.years), bootCamp: data.bootCamp === "true" ? true : false}
+};
+
 module.exports = {
     getAll,
-    getOne
+    getOne, 
+    create,
+    deleteOne,
+    updateOne
 };
